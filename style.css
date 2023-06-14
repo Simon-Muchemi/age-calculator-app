@@ -125,7 +125,7 @@ button:hover{
 }
 @media only screen and (max-width: 375px){
     body{
-        /*overflow: auto;*/
+        overflow: hidden;
         /*min-height: 100%;*/
         /*width: 100vw;*/
         /*display: grid;*/
