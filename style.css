@@ -31,15 +31,19 @@ The designs were created to the following widths:
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400i, 700, 800i*/
 body{
+    font-family: "Poppins", sans-serif;
     font-size: 10px;
+    color: hsl(0, 0%, 8%);
     background-color: #d8d4d4;
     display: grid;
     min-height: 100vh;
     place-items: center;
+    overflow: hidden;
 }
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 20px;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
@@ -63,6 +67,7 @@ body{
     border: 1px solid grey;
     border-radius: 7px;
     padding: 10px;
+    margin-bottom: 10px;
     font-size: 32px;
     color: grey;
     -moz-appearance: textfield;
@@ -72,10 +77,14 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+input::placeholder{
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
 .line-and-button{
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .line-and-button #line{
     flex-grow: 15;
@@ -90,4 +99,22 @@ button{
     border: 1px black;
     background-color: hsl(259, 100%, 65%);
 }
-
+button:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+}
+.calculated{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.value{
+    color: hsl(259, 100%, 65%);
+}
+.label-text{
+    margin-bottom: 10px;
+}
+.error{
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(0, 100%, 67%);
+}
