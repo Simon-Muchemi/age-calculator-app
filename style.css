@@ -86,10 +86,13 @@ input::placeholder{
     align-items: center;
     /*margin-top: 10px;*/
 }
-.line-and-button #line{
-    flex-grow: 15;
+.line-and-button .line{
+    flex-grow: 1;
     height: 1px;
     background-color: rgba(81, 79, 79, 0.56);
+}
+#line2{
+    display: none;
 }
 button{
     height: 70px;
@@ -104,11 +107,13 @@ button:hover{
     background-color: hsl(0, 0%, 8%);
 }
 .calculated{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
+    line-height: 10px;
 }
 .value{
     color: hsl(259, 100%, 65%);
+    font-weight: 900;
 }
 .label-text{
     margin-bottom: 10px;
@@ -117,4 +122,35 @@ button:hover{
     font-size: 10px;
     font-weight: 400;
     color: hsl(0, 100%, 67%);
+}
+@media only screen and (max-width: 375px){
+    body{
+        /*overflow: auto;*/
+        /*min-height: 100%;*/
+        /*width: 100vw;*/
+        /*display: grid;*/
+        /*place-items: center;*/
+        margin: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .inputs{
+        padding: 0;
+        width: 375px;
+    }
+    .inputs input{
+        width: 75px;
+    }
+    #line2 {
+        display: grid;
+    }
+    .line-and-button .line{
+        flex-grow: 1;
+    }
+    .attribution{
+        display: none;
+    }
 }
