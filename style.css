@@ -121,6 +121,8 @@ button:hover{
 }
 .label-text{
     margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 .error{
     font-size: 10px;
